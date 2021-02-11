@@ -1,0 +1,21 @@
+.example-spacer{
+    flex: 1 1 auto;
+}
+.abfasdgadsga{
+  text-size-adjust:400px;
+}
+.example-spacer{
+  flex: 1 1 auto;
+}
+
+
+.docs-navbar-header[_ngcontent-uih-c44] {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+padding: 8px 16px;
+}
+body {
+font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+margin: 0;
+}

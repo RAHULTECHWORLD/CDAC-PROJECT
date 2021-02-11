@@ -1,0 +1,35 @@
+<div class="bootstrap-wrapper">
+
+  <div class="container text-center">
+      <h1 style="color:rgba(19, 107, 19, 0.952)"> WELCOME {{printUser}}</h1>
+
+  </div>
+</div>
+<div class="bootstrap-wrapper">
+
+<div class="container text-center">
+
+
+
+    <section>
+
+        <div style="border: 10px;margin-left: 200px;" class="example-button-row">
+
+          <button style="margin: 8px;margin-left:10px;size: 50px;" routerLink="/debit" mat-raised-button color="primary">DEBIT BALANCE</button>
+
+          <button style="margin: 8px;" routerLink="/credit" mat-raised-button color="accent">CREDIT BALANCE</button>
+
+          <button style="margin: 8px;"  routerLink="/close"  mat-raised-button color="warn">COLSE ACCOUNT</button>
+
+          <button style="margin: 8px;"  routerLink="/view"  mat-raised-button color="primary">VIEW ACCOUNT INFO</button>
+          <router-outlet> </router-outlet>
+        </div>
+      </section>
+    <!-- <h1> welcome {{printUser}}</h1>
+   <h1 *ngIf="user">User is{{user.email}}</h1>
+        <button (click)="getUser" mat-raised-button>get user info</button> -->
+
+
+</div>
+</div>
+

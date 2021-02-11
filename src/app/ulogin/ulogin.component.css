@@ -1,0 +1,13 @@
+.example-spacer{
+  flex: 1 1 auto;
+}
+.example-button-row {
+  display: table-cell;
+  width: 1500px;
+}
+.topright {
+  position: absolute;
+  top: 60px;
+  right: 16px;
+  font-size: 18px;
+}

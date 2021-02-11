@@ -1,0 +1,77 @@
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src=".\assets\img\logo.png" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a href=""class="navbar-item">
+          Home
+        </a>
+
+        <a href="/about"class="navbar-item">
+          about us
+        </a>
+        <a href="/services"class="navbar-item">
+            services
+          </a>
+          <a href="/contact"class="navbar-item">
+            Contact Us
+          </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            login
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/login" class="navbar-item">
+              Customer login
+            </a>
+
+            <a href="/banklogin" class="navbar-item">
+              Bank Managment login
+            </a>
+            <hr class="navbar-divider">
+            <a href=""class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </nav> -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a  class="material-icons" class="navbar-brand" href="#"><i class="fa fa-bank"></i>BOBanksLtd</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a routerLink="home">HOME</a></li>
+        <li><a routerLink="about">ABOUT US</a></li>
+        <li><a routerLink="services">SERVICES</a></li>
+        <li><a routerLink="contact">CONTACT US</a></li>
+
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="signup"  ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a  *ngIf="!loggedIn" routerLink="login"><span class="glyphicon glyphicon-log-in"></span> USER-LOGIN</a></li>
+        <li><a *ngIf="loggedIn" routerLink="Usrlogin"><span class="glyphicon glyphicon-log-in"></span> USER</a></li>
+        <li><a *ngIf="loggedIn" (click)="logoutUser()"><span class="glyphicon glyphicon-log-in"></span> LOGOUT</a></li>
+        <li><a *ngIf="!loggedIn"  routerLink="aLogin"><span class="glyphicon glyphicon-log-in"></span>BANK-LOGIN</a></li>
+        <li><a *ngIf="loggedIn"  routerLink="aLogin"><span class="glyphicon glyphicon-log-in"></span>ADMIN</a></li>
+        <li><a  *ngIf="loggedIn"(click)="logoutUser()"><span class="glyphicon glyphicon-log-in"></span>LOGOUT</a></li>
+      </ul>
+    </div>
+  </nav>

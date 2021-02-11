@@ -1,0 +1,37 @@
+<app-ulogin></app-ulogin>
+<div   name="ACCOUNT DETAILS" >
+  <table  class="table table-responsive table-striped col-lg-12 col-md-12 hidden-sm hidden-xs">
+
+      <tr>
+        <th>CUSTOMERID:</th>
+        <th>FIRST NAME:</th>
+        <th>LAST NAME:</th>
+        <th>DOB:</th>
+        <th>GENDER:</th>
+        <th>EMAIL:</th>
+        <th>CONTACT:</th>
+        <th>NATIONALITY:</th>
+        <th>CITY:</th>
+        <th>STATE:</th>
+         <th>PIN CODE:</th>
+      </tr>
+
+      <ng-container >
+          <tr>
+            <td>{{biodata.customerid}}</td>
+            <td>{{biodata.firstname}}</td>
+            <td>{{biodata.lastName}}</td>
+            <td>{{biodata.dob}}</td>
+            <td>{{biodata.gender}}</td>
+            <td>{{biodata.email}}</td>
+            <td>{{biodata.contact}}</td>
+            <td>{{biodata.nationality}}</td>
+            <td>{{biodata.city}}</td>
+            <td>{{biodata.state}}</td>
+            <td>{{biodata.pin}}</td>
+
+          </tr>
+      </ng-container>
+
+    </table>
+</div>

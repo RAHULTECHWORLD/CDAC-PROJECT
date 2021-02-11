@@ -1,0 +1,24 @@
+<div class="topright" >
+  <h1  style="color:rgba(19, 107, 19, 0.952)"> WELCOME {{printUser}}</h1>
+
+</div>
+
+<div class="bootstrap-wrapper">
+
+<div class="container text-center">
+ <section>
+
+        <div style="border: 10px;margin-left: 200px;" class="example-button-row">
+
+          <button style="margin: 8px;margin-left:10px;size: 50px;" routerLink="/viewB" mat-raised-button color="warn">VIEW BALANCE</button>
+
+          <button style="margin: 8px;" routerLink="/accD" mat-raised-button color="warn">ACCOUNT DETAIL</button>
+
+          <button style="margin: 8px;"  routerLink="/fundT"  mat-raised-button color="warn">FUND TRANSFER</button>
+
+          <button style="margin: 8px;"  routerLink="/fixD"  mat-raised-button color="warn">FIXED DIPOSIT</button>
+          <router-outlet></router-outlet>
+        </div>
+      </section>
+</div>
+</div>
